@@ -1,0 +1,142 @@
+.header{
+background: url("../img/bg-header.jpg");
+background-position: center;
+
+background-size: cover;
+position: relative;
+
+
+
+}
+
+.logo{
+width: 40px;
+
+}
+.linea-blanca::after{
+content: "";
+display: block;
+width: 100%;
+height: 10px;
+background-color: white;
+position: absolute;
+left: 0;
+bottom: 0;
+}
+
+.vh-50{
+height: 100vmin;
+
+
+}
+
+
+/* sección tarjetas */
+.card-img-filter{
+/* con esta propiedad resalto mucho mejor mis textos */
+    filter:brightness(0.5);
+    /* le brinda opacidad a la imagen */
+}
+
+/* efecto tarjeta rombo */
+.card-effect:hover .card {
+    clip-path: polygon(
+        50% 0, 
+        50% 0, 
+        100% 50%, 
+        100% 50%,
+        50% 100%, 
+        50% 100%,
+        0 50%,
+        0 50%);
+
+
+}
+.card{
+transition-duration:.8s ;
+clip-path: polygon(
+    50% 0, 
+    100% 0, 
+    100% 50%, 
+    100% 100%,
+    50% 100%, 
+    0% 100%,
+    0 50%,
+    0 0%);
+}
+
+.card-effect:hover .card-img-overlay{
+    transform: scale(.9);
+}
+.card-effect:hover .card-img-overlay{
+transition-duration:.6s ;
+
+}
+
+/* comentario */
+.coment{
+background-image: url(../img/bg-clients.jpeg);
+background-position: center;
+background-size: cover;
+position: relative;
+
+}
+.coment .linea-blanca {
+top:0;
+
+
+}
+
+
+.coments__img{
+
+--tamano:80px;
+width: var(--tamano);
+height: var(--tamano);
+object-fit: cover;
+border-radius: 50%;
+box-shadow:7px 7px 7px rgba(0 0 0 / 0.5);
+border:3px ridge white;
+
+
+}
+.girandoimagen{
+
+    transform: rotate(0.5turn);
+
+}
+
+/* sección inspiración */
+.media-object-img{
+--tamano:65px  ;
+width: var(--tamano);
+height: var(--tamano);
+margin-right: 15px;
+
+}
+
+/* carrusel */
+.carousel-weston-middle{
+top:35%;
+
+}
+
+/* footer */
+
+.logo1{
+    height: 50px;
+    width: 50px;
+    margin-left: 50px;
+}
+
+
+
+/* medias ajustando a pantallas */
+
+@media screen and (max-width: 320px){
+
+.vh-50{
+    height:160vmax;
+}
+
+}
